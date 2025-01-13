@@ -1,30 +1,59 @@
 <!DOCTYPE <!DOCTYPE html>
 <html>
     <head>
-        <title>About</title>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About</title>
         <link rel="stylesheet" href="stylesheet.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c542587bb4.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+
+<!-- Swiper.js JavaScript -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   
     </head>
     <body>
-        <nav>
-
+        <nav class="navbar">
+            <div class="navbar-container container">
+                <input type="checkbox" name="" id="">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <ul class="menu-items">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+                <div class="logo"><a href="#">RUBY HAMMOND</a></div>
+            </div>
         </nav>
         <main>
             <div class="about-entry">
+                
                 <div class="about-entry-pic">
-                    <img src="selfie.JPG">
+
                 </div>
                 <div class="about-entry-para">
-                    <h1>Hi! I'm Ruby Hammond</h1>
+                    <h1>Hi! I'm Ruby Hammond</h1><br>
                     <p>
                         I'm currently a second-year Computer Information Technology (CIT) student at Lethbridge Polytechnic. 
                         My journey to this point has been anything but conventional. I was born and raised in the picturesque mountains of Salmo, BC—a small village where technology felt like a distant world. 
-                        Growing up, I knew little about computers, networks, or even Wi-Fi, but I’ve come a long way, and I’m so glad I chose this path. 
-                        <br>
+                        Growing up, I knew little about computers, programming, or even Wi-Fi, but I’ve come a long way, and I’m so glad I chose this path. 
+                        <br><br>
                         Outside of school, I work as a respite care aide,
                         supporting individuals with special abilities. This 
                         work has been incredibly rewarding—it’s a constant 
@@ -33,20 +62,100 @@
                     </p>
                 </div>
             </div>
-
-            <div class="timeline">
-            
+            <div class="Education">
+                <div class="salmo"><h2>Salmo Secondary School</h2>
+                    <p>
+                        Salmo, BC<br>
+                        
+                        <b>Graduation: 06/2021</b>
+                        
+                    </p>
+                </div>
+                <div class="leth"><h2>Lethbridge Polytech</h2>
+                    Computer Information Technology<br>
+                    Lethbridge, AB <br>
+                    <b>Expected graduation: 05/2025</b>
+                </div>
+            </div>
+            <div class="tlcontainer">
+                <div class="timeline">
+                    <h1>Work Experience</h1><br>
+                    <div class="timeline-container primary">
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-baby"></i>
+                        </div>
+                        <div class="timeline-body">
+                            <h4 class="timeline-title"><span class="badge">Respite Care 2024 - Current</span></h4>
+                            <p>- Provided compassionate respite care for children with disabilities, ranging from infants to teens, across multiple families.
+                                <br>
+                                - Ensured a safe and supportive environment while assisting with daily routines and specialized care needs.
+                               <br>
+                                -  Developed and maintained strong communication with families to address specific care requirements and updates.
+                                <br>
+                                - Adapted to various caregiving needs, including assistance with mobility, communication, and emotional support for children with diverse disabilities.</p>
+                            <p class="timeline-subtitle">Coaldale AB</p>
+                        </div>
+                    </div>
+                    <div class="timeline-container danger">
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-broom"></i>
+                        </div>
+                        <div class="timeline-body">
+                            <h4 class="timeline-title"><span class="badge">Janitor 2024 Summer</span></h4>
+                            <p>- Maintained building cleanliness and stocked supplies during 12-hour shifts, ensuring a safe environment.
+                               <br>
+                               -  Worked independently, adhering to PPE and safety protocols.
+                               <br>
+                               - Managed cleaning tasks and supplies efficiently while following strict schedules.
+                               <br>
+                               -  Demonstrated reliability and attention to detail during solo shifts.</p>
+                            <p class="timeline-subtitle">Teck Metals LTD, Trail BC</p>
+                        </div>
+                    </div>
+                    <div class="timeline-container success">
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </div>
+                        <div class="timeline-body">
+                            <h4 class="timeline-title"><span class="badge">Barista 2018 - 2023</span></h4>
+                            <p>- Provided outstanding customer service in busy dining setting, ensuring guest satisfaction with a positive attitude.
+                                <br>
+                                - Kept dining areas clean and organized, adhering to health and safety standards
+                                <br>
+                                - Efficiently managed numerous orders, enhancing the dining experience.
+                                <br>
+                                - Collaborated with a diverse team to promote inclusive work environment.</p>
+                            <p class="timeline-subtitle">Dragonfly Cafe, Salmo BC</p>
+                        </div>
+                    </div>
+                    <div class="timeline-container warning">
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-person-skiing-nordic"></i>
+                        </div>
+                        <div class="timeline-body">
+                            <h4 class="timeline-title"><span class="badge">Rental Shop Associate 2018 - 2023 Winters</span></h4>
+                            <p>- Ensured safety by accurately measuring ski equipment.
+                                <br>
+                                - Offered personalized rental options to enhance customer experiences.
+                                <br>
+                                - Trained new hires in equipment handling and cash management.
+                                <br>
+                                - Managed legal documents and financial transactions securely.</p>
+                            <p class="timeline-subtitle">Salmo Ski Hill, Salmo BC</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="skills">
-                <div class="hard-skills">
+                <div class="hard-skills"><h1>Hard Skills</h1><br>
                     <div class="ui">UX/UI design</div>
                     <div class="MO365">Microsoft Office</div>
                     <div class="Networking">Network structure & security</div>
-                    <div class="ui">SQL</div>
+                    <div class="ui">SQL & Databases</div>
                     <div class="ui">HTML/CSS & JavaScript</div>
                     <div class="ui">C++, Python & C#</div>
                 </div>
-                <div class="soft-skills">
+                <div class="soft-skills"><h1>Soft Skills</h1><br>
                     <div>Problem solving</div>
                     <div>Leadership</div>
                     <div>Critical thinking</div>
@@ -55,12 +164,148 @@
                     <div>Customer service</div>
                 </div>
             </div>
-            <div class="hobbies">
-                <div>Baking</div>
-                <div>Reading</div>  
-                <div>Video Games</div>
-                <div>Programming</div>
+            <p class="p-test2">References</p>
+            <section class="reftestimonial-section">
+                <div class="reftest">
+                  <h2>Lamiah Arnold-Trower</h2><br>
+                    <p>
+                      Owner of Dragonfly Cafe<br>
+                      Salmo, BC <br>
+                      (250) 551-1791
+                    </p>
+                </div>
+                <div class="reftest">
+                  <h2>Margaret MacDonald</h2><br>
+                    <p>
+                      Manager of Salmo Ski Hill<br>
+                      Salmo, BC <br>
+                      (250) 505-4989
+                    </p>
+                </div>
+                <div class="reftest">
+                  <h2>Chelsea Picone</h2><br>
+                    <p>
+                      Janitorial Lead Hand<br>
+                      Trail, BC <br>
+                      (250) 231-3593
+                    </p>
+                </div>
+            </section>
+            <div class="hobbies"><h1 style="text-align: center;" >Hobbies & Interests</h1>
+            <div class="hobby-divs">
+                <script>
+                    ScrollReveal({ 
+                        reset: true,
+                        duration: 1500,
+                        delay:200,
+                        distance: '60px' 
+                    });
+                    ScrollReveal().reveal('.hobbies', { interval: 200 ,origin:'bottom'});
+                    ScrollReveal().reveal('.hobby-divs', { interval: 200 ,origin:'bottom'});
+                    ScrollReveal().reveal('.skills', { interval: 200 ,origin:'bottom'});
+                    ScrollReveal().reveal('.timeline-container.primary', { interval: 200 ,origin:'bottom'});
+                    ScrollReveal().reveal('.timeline-container.danger', { interval: 200 ,origin:'bottom'});
+                    ScrollReveal().reveal('.timeline-container.success', { interval: 200 ,origin:'bottom'});
+                    ScrollReveal().reveal('.timeline-container.warning', { interval: 200 ,origin:'bottom'});
+                    ScrollReveal().reveal('.p-test2', { interval: 200 ,origin:'bottom'});
+                    ScrollReveal().reveal('.reftestimonial-section', { interval: 200 ,origin:'bottom'});
+                  </script>
+                 
+                <div class="card card--mobileApp">
+                    <div class="card__content">
+                      <p class="card__title">Mobile App Developement</p>
+                      <p class="card__description">
+                        In my free time, I’m currently designing an app aimed 
+                        at simplifying communication and organization between 
+                        parents and babysitters. While I’m still in the design 
+                        stage, I plan to begin implementation and coding soon.
+                        </p>
+                    </div>
+                  </div>
+                  <div class="card card--friendsFamily">
+                    
+                    <div class="card__content">
+                      <p class="card__title">Friends & Family</p>
+                      <p class="card__description">
+                        Spending time with friends and family is so important to me.
+                         I value the moments we share, whether it’s a meal or just 
+                         hanging out. They’re my biggest source of joy and support.
+                        </p>
+                    </div>
+                  </div>
+                  <div class="card card--baking">
+                    <div class="card__content">
+                      <p class="card__title">Baking</p>
+                      <p class="card__description">
+                        Baking is my favorite way to relax and get creative. I love 
+                        experimenting with new recipes and sharing my treats with 
+                        friends and family. It’s so rewarding to see something I’ve
+                         made bring others joy.
+                        </p>
+                    </div>
+                  </div>
+                  <div class="card card--videoGames">
+                    <div class="card__content">
+                      <p class="card__title">Video Games</p>
+                      <p class="card__description">
+                        Video games are my way to relax and have fun. I enjoy exploring 
+                        immersive worlds and tackling strategic challenges. It’s 
+                        also a great way to connect with friends who share the 
+                        same passion.
+                        </p>
+                    </div>
+                  </div>
+                  <div class="card card--reading">
+                    <div class="card__content">
+                      <p class="card__title">Reading</p>
+                      <p class="card__description">
+                        Reading is my escape and a way to expand my mind. I 
+                        love getting lost in a good book and exploring new worlds 
+                        or ideas. It’s my go-to activity for unwinding and staying 
+                        inspired.
+                        </p>
+                    </div>
+                  </div>
+                </div>
             </div>
+            <section class="hire-me">
+                <p class="hire">
+                    Want to hire me?</p>
+                    <p>Let's connect! If you're interested in learning more about my skills and experience, click below to get in touch.<br>
+                    <button class="cssbuttons-io">
+                        <span
+                          >
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                              d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                              fill="currentColor"
+                            ></path>
+                            <a href="/path-to-your-resume.pdf" download></a>Download my resume</span
+                        >
+                      </button>
+                </p>
+            </section>
         </main>
     </body>
+    <footer>
+        <div class="footer2">
+            <div class="footer-logo">
+                <h1>RUBY HAMMOND</h1>
+            </div>
+            <div class="footer-nav">
+                <p>
+                   <a href="">Home</a><br>
+                   <a href="">About</a><br>
+                   <a href="">Portfolio</a><br>
+                   <a href="">Blog</a><br>
+                   <a href="">Contact Me</a>
+                </p>
+            </div>
+            <div class="socials">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </div>
+    </footer>
 </html>

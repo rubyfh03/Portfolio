@@ -1,0 +1,45 @@
+                int main() {<br>
+                     cout << "<span style="color: #ED6CEA">******************************</span>" << endl;<br>
+                     cout << "<span style="color: #ED6CEA">*    Hello, World! 🌍       *</span>" << endl;<br>
+                     cout << "<span style="color: #ED6CEA">*    I'm Ruby! ✨           *</span>" << endl;<br>
+                     cout << "<span style="color: #ED6CEA">* Welcome to my website! 💻 *</span>" << endl;<br>
+                    cout << "<span style="color: #ED6CEA">******************************</span>" << endl;<br>
+                    return 0;<br>
+                 }<br><br>
+
+       <section class="skills-section">
+            <div class="skills">
+                <div clas
+            </div>
+        </section>  
+        <section class="slider">
+            <div class="slide-track">
+                <div class="slide"><img src="Apache.png" width="200px" height="200px"></div>
+                <div class="slide"><img src="CSS3.png" width="200px" height="200px"></div>
+                <div class="slide"><img src="C++ (CPlusPlus).png" width="200px" height="200px"></div>
+                <div class="slide"><img src="Figma.png" width="200px" height="200px"></div>
+                <div class="slide"><img src="Github.png" width="200px" height="200px"></div>
+                <div class="slide"><img src="HTML5.png" width="200px" height="200px"></div>
+                <div class="slide"><img src="JavaScript.png" width="200px" height="200px"></div>
+                <div class="slide"><img src="Kotlin.png" width="200px" height="200px"></div>
+                <div class="slide"><img src="Linux.png" width="200px" height="200px"></div>
+                <div class="slide"><img src="mysql.png" width="200px" height="200px"></div>
+                <div class="slide"><img src="php.png" width="200px" height="200px"></div>
+                <div class="slide"><img src="powershell.png" width="200px" height="200px"></div>
+                <div class="slide"><img src="putty.png" width="200px" height="200px"></div>
+                <div class="slide"><img src="react.png" width="200px" height="200px"></div>
+                <div class="slide"><img src="Visual Studio.png" width="200px" height="200px"></div>
+                <div class="slide"><img src="webflow.png" width="200px" height="200px"></div>
+                <div class="slide"><img src="sharp.png" width="200px" height="200px"></div>
+                <div class="slide"><img src="C.png" width="200px" height="200px"></div>
+            </div>
+        </section>
+        <script>
+            ScrollReveal({ 
+                reset: true,
+                duration: 1500,
+                delay:500,
+                distance: '60px' 
+            });
+            ScrollReveal().reveal('.slider', { origin: 'bottom'});
+          </script> 
