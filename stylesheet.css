@@ -471,11 +471,15 @@ main {
 
 }
 
-.footer-logo {
+.footer-logo a {
+  text-decoration: none;
+  color:#1f1414;
+  
   font-size: 20px;
   font-family: "Cormorant Garamond", serif;
   font-weight: 700;
   font-style: normal;
+  text-decoration: none;
 }
 
 .footer-nav {
@@ -492,12 +496,12 @@ main {
 }
 
 /* visited link */
-.footer-nav a:visited {
+.footer-nav a:visited{
   color: #000000;
 }
 
 /* mouse over link */
-.footer-nav a:hover {
+.footer-nav a:hover{
   color: #FECFF5;
 }
 
