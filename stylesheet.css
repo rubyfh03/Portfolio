@@ -790,10 +790,27 @@ section {
   transform: scale(0.95);
 }
 
+.hobby-divs {
+  height: 300px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Simplified for better flexibility */
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  align-items: center;
+  color: black;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  line-height: 25px;
+  gap: 20px; /* Adds spacing between cards */
+}
+
+/* Cards inside the .hobby-divs */
 .card {
   position: relative;
-  width: 90%; /* Flexible width for responsiveness */
-  max-width: 300px; /* Maintain a max width */
+  width: 100%; /* Adjusts to grid column width */
   height: 200px;
   background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
   border-radius: 10px;
@@ -802,114 +819,49 @@ section {
   justify-content: center;
   overflow: hidden;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-}
-
-.card--mobileApp {
-  background-image: url("mobileApp.png");
-}
-
-.card--friendsFamily {
-  background-image: url("friends.JPG");
-}
-
-.card--baking {
-  background-image: url("baking.jpg");
-}
-
-.card--videoGames {
-  background-image: url("pc.jpg");
-}
-
-.card--reading {
-  background-image: url("books.jpg");
-}
-
-.card svg {
-  width: 48px;
-  fill: #333;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .card:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.card__content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-45deg);
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-  background-color: #fff;
-  opacity: 0;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+/* Responsive Design for .hobby-divs and .card */
+@media screen and (max-width: 1024px) {
+  .hobby-divs {
+    grid-template-columns: repeat(3, 1fr); /* Reduces to 3 columns */
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
-.card:hover .card__content {
-  transform: translate(-50%, -50%) rotate(0deg);
-  opacity: 1;
-}
-
-.card__title {
-  margin: 0;
-  font-size: 24px;
-  color: #D62458;
-  font-weight: 700;
-}
-
-.card__description {
-  margin: 10px 0 0;
-  font-size: 14px;
-  color: #777;
-  line-height: 1.4;
-}
-
-.card:hover svg {
-  scale: 0;
-  transform: rotate(-45deg);
-}
-
-/* Responsive Design */
 @media screen and (max-width: 768px) {
+  .hobby-divs {
+    grid-template-columns: repeat(2, 1fr); /* Reduces to 2 columns */
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .card {
-    width: 80%; /* Increase width for smaller screens */
-    max-width: none; /* Remove max-width to allow scaling */
-  }
-
-  .card__title {
-    font-size: 20px; /* Adjust font size for better visibility */
-  }
-
-  .card__description {
-    font-size: 12px; /* Adjust description font size */
+    height: 180px; /* Adjust card height */
   }
 }
 
 @media screen and (max-width: 480px) {
+  .hobby-divs {
+    grid-template-columns: 1fr; /* Stacks cards in one column */
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 15px; /* Adjusts spacing for smaller screens */
+  }
+
   .card {
-    width: 100%; /* Use full width for very small screens */
-    height: 180px; /* Slightly smaller height for smaller screens */
-  }
-
-  .card__title {
-    font-size: 18px; /* Further adjust title font size */
-  }
-
-  .card__description {
-    font-size: 11px; /* Adjust description font size further */
-  }
-
-  .card svg {
-    width: 40px; /* Scale down SVG for small screens */
+    height: 150px; /* Further adjusts card height */
   }
 }
+
 
 
 .about-entry {
@@ -1134,22 +1086,6 @@ section {
 .timeline h1 {
   color: #D62458;
   text-align: center;
-}
-
-.hobby-divs {
-  height: 300px;
-  position: relative;
-  display: grid;
-  grid-template-columns: 20% 20% 20% 20% 20%;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  padding-left: 100px;
-  padding-right: 100px;
-  align-items: center;
-  color: black;
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 500;
-  line-height: 25px;
 }
 
 
