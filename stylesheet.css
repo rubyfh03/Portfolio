@@ -790,15 +790,14 @@ section {
   transform: scale(0.95);
 }
 
-
 .card {
   position: relative;
-  width: 300px;
+  width: 90%; /* Flexible width for responsiveness */
+  max-width: 300px; /* Maintain a max width */
   height: 200px;
   background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
   border-radius: 10px;
   display: flex;
-
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -807,7 +806,6 @@ section {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-
 }
 
 .card--mobileApp {
@@ -877,6 +875,42 @@ section {
   scale: 0;
   transform: rotate(-45deg);
 }
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .card {
+    width: 80%; /* Increase width for smaller screens */
+    max-width: none; /* Remove max-width to allow scaling */
+  }
+
+  .card__title {
+    font-size: 20px; /* Adjust font size for better visibility */
+  }
+
+  .card__description {
+    font-size: 12px; /* Adjust description font size */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 100%; /* Use full width for very small screens */
+    height: 180px; /* Slightly smaller height for smaller screens */
+  }
+
+  .card__title {
+    font-size: 18px; /* Further adjust title font size */
+  }
+
+  .card__description {
+    font-size: 11px; /* Adjust description font size further */
+  }
+
+  .card svg {
+    width: 40px; /* Scale down SVG for small screens */
+  }
+}
+
 
 .about-entry {
   position: relative;
