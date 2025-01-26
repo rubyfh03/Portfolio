@@ -1455,3 +1455,28 @@ section {
   height: 100%;
   object-fit: cover;
 }
+
+
+
+.crafterscorner{
+  max-width: 1044px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.crafterscorner div{
+  margin: 40px 0 0 0;
+}
+
+.crafterscorner h1{
+  font-size: 2.3rem;
+  color: #D62458;
+
+}
+
+.crafterscorner h2{
+  font-size: 1.5rem;
+  color: #D62458;
+}
+
+
