@@ -1,6 +1,9 @@
+
+
 main {
   overflow: hidden;
   background-color: #CBC1E4;
+
 }
 
 .hero {
@@ -75,20 +78,77 @@ main {
   background-position: center;
 }
 
+.index-about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.index-about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    margin-top: 2%;
+    padding: 40px;
+    width: 70%;
+    border-radius: 10px;
+}
+.about-left {
+    margin-left: 8%;
+    font-size: 34px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.5em;
+    color: #D62458;
+}
+.about-right {
+    max-width: 50%;
+    text-align: left;
+}
+.about-right p {
+    color: black;
+    font-size: 20px;
+    margin-bottom: 15px;
+    line-height: 1.5em;
+}
+.about-right a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #D62458;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.about-right a:hover {
+    background-color: #F3899D;
+}
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-right {
+        max-width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+  }
 
 
+  
 .testimonial-section {
-  margin: 20px 10%;
+  margin: 0 10%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   border-radius: 25px;
-  background: linear-gradient(-45deg, #7990D4 0%, #FFDC66 100%);
+
   gap: 8px;
   padding: 20px;
 }
 
 .test {
-  margin: 25px;
+  margin: 5px;
   color: black;
   padding: 20px;
   text-align: center;
@@ -138,7 +198,7 @@ main {
 }
 
 .p-test1 {
-  margin-top: 20px;
+  margin-top: 4%;
   font-size: 1.5rem;
   text-align: center;
   font-family: "Cormorant Garamond", serif;
@@ -1374,16 +1434,18 @@ section {
   display: block;
   content: "";
   width: 100%;
-  padding-top: 66.6666666667%;
+  padding-top: 66.6666666667%; /* Aspect Ratio (can adjust this depending on your needs) */
 }
+
 .carousel__slide div > img {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  width: 100%;
-  height: 100%;
+  width: 100%; /* Make all images fill the container */
+  height: 100%; /* Ensure height matches the container */
+  object-fit: cover; /* Ensures the images scale and cover the container without distortion */
 }
 .carousel__slide img {
   display: block;
@@ -1456,27 +1518,86 @@ section {
   object-fit: cover;
 }
 
-
-
-.crafterscorner{
+.crafterscorner {
   max-width: 1044px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 20px;
 }
 
-.crafterscorner div{
-  margin: 40px 0 0 0;
+.crafterscorner div {
+  margin-bottom: 40px;
 }
 
-.crafterscorner h1{
+.crafterscorner h1 {
   font-size: 2.3rem;
   color: #D62458;
-
+  text-align: center;
 }
 
-.crafterscorner h2{
+.crafterscorner h2 {
   font-size: 1.5rem;
   color: #D62458;
+  margin-bottom: 10px;
 }
 
+.crafterscorner p {
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: justify; /* Justify text for a neat, aligned look */
+}
 
+.crafterscorner img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px 0; /* Adds space between text and images */
+}
+
+.planning, .wireframe, .mockup, .results {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.19);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.6px);
+  -webkit-backdrop-filter: blur(6.6px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.planning .text, .wireframe .text, .mockup .text, .results .text {
+  margin-bottom: 20px;
+}
+
+.planning, .wireframe, .mockup, .results {
+  display: flex;
+  flex-direction: column; /* Stack text and images vertically */
+  align-items: flex-start; /* Align items to the left */
+}
+
+.results img {
+  max-width: 50%;
+  height: auto;
+}
+
+.crafterscorner a {
+  text-decoration: none;
+  color: #D62458;
+  font-weight: bold;
+}
+
+.crafterscorner a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  /* For small screens, stack images vertically */
+  .planning, .wireframe, .mockup, .results {
+    text-align: center; /* Center text and images for mobile */
+  }
+
+  .planning img, .wireframe img, .mockup img, .results img {
+    width: 100%; /* Images will take up full width */
+    margin: 10px 0;
+  }
+}

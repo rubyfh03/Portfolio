@@ -17,3 +17,17 @@ connectbtn.addEventListener('click', () => {
 crossbtn.addEventListener('click', () => {
 	socialcontainer.classList.remove('visible')
 });
+
+import { Analytics } from "@vercel/analytics/react";
+
+// Initialize EmailJS
+emailjs.init('_n7S_RR4DoOpxq8Xe');
+// Function to send email (using EmailJS)
+function sendEmail(formData) {
+	emailjs.sendForm('service_htha5sj', 'template_j5xlxoq', formData)
+	  .then((response) => {
+		console.log('Email sent successfully', response);
+	  }, (error) => {
+		console.error('Error sending email', error);
+	  });
+  }
