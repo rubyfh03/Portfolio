@@ -21,7 +21,7 @@ crossbtn.addEventListener('click', () => {
 import { Analytics } from "@vercel/analytics/react";
 
 // Initialize EmailJS
-emailjs.init('_n7S_RR4DoOpxq8Xe');
+emailjs.init('OBq6kyEnWFiG6Vg1jNca6');
 // Function to send email (using EmailJS)
 function sendEmail(formData) {
 	emailjs.sendForm('service_htha5sj', 'template_gindywh', formData)
