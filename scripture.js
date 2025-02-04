@@ -18,16 +18,16 @@ crossbtn.addEventListener('click', () => {
 	socialcontainer.classList.remove('visible')
 });
 
-import { Analytics } from "@vercel/analytics/react";
+
 
 // Initialize EmailJS
-emailjs.init('OBq6kyEnWFiG6Vg1jNca6');
+emailjs.init('service_htha5sj');
 // Function to send email (using EmailJS)
 function sendEmail(formData) {
-	emailjs.sendForm('service_htha5sj', 'template_gindywh', formData)
-	  .then((response) => {
-		console.log('Email sent successfully', response);
-	  }, (error) => {
-		console.error('Error sending email', error);
-	  });
-  }
+  emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData)
+    .then((response) => {
+      console.log('Email sent successfully', response);
+    }, (error) => {
+      console.error('Error sending email', error);
+    });
+}

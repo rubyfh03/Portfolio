@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Me</title>
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
     <linkrel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
     <link rel="stylesheet" href="stylesheet.css" />
     <script src="https://kit.fontawesome.com/c542587bb4.js" crossorigin="anonymous"></script>
@@ -40,33 +44,23 @@
       <p>Feel free to contact me about any inquiries</p><br>
       <form class="contact-form">
         <div class="input-area">
-          <input type="text" placeholder="Your name" />
+          <input type="text" name="user_name" placeholder="Your name" required />
         </div>
         <div class="input-area">
-          <input type="email" placeholder="Email address" />
+          <input type="email" name="user_email" placeholder="Email address" required />
         </div>
         <div class="input-area">
-          <input type="text" placeholder="Subject" />
+          <input type="text" name="subject" placeholder="Subject" />
         </div>
         <div class="input-area h-80">
-          <textarea placeholder="Your message"></textarea>
+          <textarea name="message" placeholder="Your message" required></textarea>
         </div>
         <br>
-        <a href="resume2025.pdf" download="Ruby_Hammond_resume">
-
-          <button class="cssbuttons-io">
-            <span>
-              <path d="M0 0h24v24H0z" fill="none"></path>
-              <path
-                d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
-                fill="currentColor"
-              ></path>
-              Send
-            </span>
-          </button>
-        </a>
-        
+        <button type="submit" class="cssbuttons-io">
+          <span>Send</span>
+        </button>
       </form>
+      
     </div>
     <script src="scripture.js"></script>
     </main>
