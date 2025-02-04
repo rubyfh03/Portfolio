@@ -24,7 +24,7 @@ import { Analytics } from "@vercel/analytics/react";
 emailjs.init('_n7S_RR4DoOpxq8Xe');
 // Function to send email (using EmailJS)
 function sendEmail(formData) {
-	emailjs.sendForm('service_htha5sj', 'template_j5xlxoq', formData)
+	emailjs.sendForm('service_htha5sj', 'template_gindywh', formData)
 	  .then((response) => {
 		console.log('Email sent successfully', response);
 	  }, (error) => {
